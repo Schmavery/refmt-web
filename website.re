@@ -34,13 +34,6 @@ let refmt conversion str => {
   }
 };
 
-/*
-  //Reason_toolchain.ML.print_canonical_implementation_with_comments (ast, comments);
-let stuff use_stdin filename=> (Reason_toolchain.ML.canonical_implementation_with_comments (Reason_toolchain.setup_lexbuf use_stdin filename), true, false);
- let x = (Dom_html.createDiv (Dom_html.document#body));
- (Js.Unsafe.meth_call body "appendChild" [|(Js.Unsafe.inject (Js.some x))|]);
-Dom_event.listen (Dom_html.event_target#onkeyup) 
- */
 let reta = Dom_html.createTextarea Dom_html.document;
 let mlta = Dom_html.createTextarea Dom_html.document;
 let body = get Dom_html.document "body";
@@ -53,7 +46,6 @@ set (get mlta "style") "height" "75%";
 set reta "value" "/* re */";
 set (get reta "style") "width" "50%";
 set (get reta "style") "height" "75%";
-
 
 Dom.appendChild body mlta;
 Dom.appendChild body reta;
