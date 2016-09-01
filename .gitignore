@@ -2,3 +2,5 @@ reason
 website
 *.cm*
 !reason.cma
+!reason_toolchain.cmi
+!reason_pprint_ast.cmi
