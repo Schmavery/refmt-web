@@ -8,7 +8,7 @@ js_debug := \
 --enable=debuginfo --disable=inline --enable=pretty +weak.js +toplevel.js \
 
 re:$(X).cmo
-	ocamlfind ocamlc -g -linkpkg -package $(pkgs) -o $(X) -I reason ./reason/reason.cma $(X).cmo
+	ocamlfind ocamlc -g -linkpkg -package $(pkgs) -o $(X) -I reason ./reason.cma $(X).cmo
 	js_of_ocaml ${js_debug} $(X) -o $(X).js
 	mv $(X).js built.js
 

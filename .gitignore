@@ -1,3 +1,4 @@
 reason
 website
 *.cm*
+!reason.cma
